@@ -89,9 +89,8 @@ form {
   margin-top: -1rem;
 }
 
-label {
-}
 #tweet-box {
+  font-size: 1rem;
   width: 75%;
   height: 50px;
   border: none;
@@ -144,29 +143,31 @@ input[type="submit"] {
 }
 
 .tweeter {
-  color:rgb(127, 238, 214);
+  color: rgb(127, 238, 214);
   text-shadow: 0 4px 4px blue;
   align-self: flex-end;
   margin-top: 2rem;
   margin-right: 1.5rem;
 }
 
-@media only screen and (max-width : 400px){
-
-  body{
+@media only screen and (max-width: 400px) {
+  body {
     padding: 2rem;
   }
-   .flip-card {
-  margin-top: 3rem;
-  max-width: 330px;
-  height: 300px;
-  
-}
+  .flip-card {
+    margin-top: 3rem;
+    max-width: 330px;
+    height: 300px;
+  }
 
-h1 {
-  font-size: 1.2rem;
-  font-style: italic;
-  color: rgb(173, 217, 217);
-  text-shadow: 0 4px 4px blue;
+  h1 {
+    font-size: 1.2rem;
+    font-style: italic;
+    color: rgb(173, 217, 217);
+    text-shadow: 0 4px 4px blue;
+  }
+
+  form {
+    gap: 2px;
   }
 }
