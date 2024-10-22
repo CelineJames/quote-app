@@ -3,29 +3,45 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>HEllo there</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap"
+      rel="stylesheet"
+    />
+    <title>Tweeting App</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1>Adding this text</h1>
-    <p>trial</p>
+    <main>
+      <h1>WELCOME TO QUOTES...</h1>
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="tweet-box-front">
+            <div class="input-box">
+              <form action="">
+                <input
+                  type="text"
+                  placeholder="Write your quote"
+                  id="tweet-box"
+                />
+                <input type="submit" id="button" />
+              </form>
+              <img
+                src="./assets/quotes-removebg-preview.png"
+                alt="logo"
+                class="quotes"
+              />
+            </div>
+          </div>
 
-    <h5>UPDATED HEAD</h5>
-    <p>added this mf</p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos
-      eveniet adipisci voluptatum tenetur neque totam aperiam iusto.
-      Perspiciatis iusto magnam ipsam eius? Laboriosam iure maiores, libero
-      numquam reprehenderit eligendi aliquam.
-    </p>
-    <h2>hello world</h2>
-    <h5>My test branch</h5>
-    <p>i am on celine's branch, trying out git branching</p>
-    <p>i am on celine's branch, trying out git branching</p>
-    <p>i am on celine's branch, trying out git branching 2222</p>
-    <h2>meeeeeeee</h2>
-    <h5>updated new test</h5>
-    <h6>my own last element</h6>
-
-    <h4>last elemnet</h4>
+          <div class="tweet-box-back">
+            <p class="tweet"></p>
+            <span class="tweeter"> </span>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="quotes.js"></script>
   </body>
 </html>
