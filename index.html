@@ -6,42 +6,36 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap"
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
       rel="stylesheet"
     />
-    <title>Tweeting App</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="form.css" />
+    <title>Quotes form</title>
   </head>
   <body>
-    <main>
-      <h1>WELCOME TO QUOTES...</h1>
-      <div class="flip-card">
-        <div class="flip-card-inner">
-          <div class="tweet-box-front">
-            <div class="input-box">
-              <form action="">
-                <input
-                  type="text"
-                  placeholder="Write your quote"
-                  id="tweet-box"
-                />
-                <input type="submit" id="button" />
-              </form>
-              <img
-                src="./assets/quotes-removebg-preview.png"
-                alt="logo"
-                class="quotes"
-              />
-            </div>
-          </div>
-
-          <div class="tweet-box-back">
-            <p class="tweet"></p>
-            <span class="tweeter"> </span>
-          </div>
-        </div>
+    <form action="">
+      <h1>Sign up</h1>
+      <input type="text" name="fname" id="fname" placeholder="first Name" />
+      <div class="fn-error"></div>
+      <input type="text" id="lname" placeholder="last Name" />
+      <div class="ln-error"></div>
+      <div class="input-wrapper">
+        <input type="password" id="password" placeholder="Create Password" />
+        <div class="password-error"></div>
       </div>
-    </main>
-    <script src="quotes.js"></script>
+      <div class="input-wrapper">
+        <input type="password" id="cpassword" placeholder="Confirm Password" />
+        <div class="cpassword-error"></div>
+      </div>
+      <button type="submit" id="signup">Signup</button>
+
+      <p>Already have an account? <a href="#">Login</a></p>
+    </form>
+    <script src="./app.js"></script>
   </body>
 </html>

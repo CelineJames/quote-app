@@ -37,7 +37,7 @@
 // console.log(user);
 
 document.addEventListener("DOMContentLoaded", function () {
-    const fName = document.getElementById("fname"),
+  const fName = document.getElementById("fname"),
     lName = document.getElementById("lname"),
     password = document.getElementById("password"),
     confirmPassword = document.getElementById("cpassword"),
@@ -122,12 +122,10 @@ document.addEventListener("DOMContentLoaded", function () {
         lastname: lName.value,
         password: password.value,
       };
-    
+
       storeUserDetails(userDetails);
     }
   });
-
-  
 
   function storeUserDetails(data) {
     localStorage.setItem(
@@ -138,9 +136,8 @@ document.addEventListener("DOMContentLoaded", function () {
         password: data.password,
       })
     );
-    location.assign("./index.html");
+    location.assign("./index1.html");
   }
 });
-
 
 // chceck user authentication
