@@ -3,57 +3,62 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>login page</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
+    />
+    <title>Login Page</title>
+    <link rel="stylesheet" href="login.css" />
   </head>
   <body>
-    <!DOCTYPE html>
-    <html lang="en">
-      <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link
-          rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
-        />
-        <title>Login Page</title>
-        <link rel="stylesheet" href="login.css" />
-      </head>
-      <body>
-        <main>
-          <div class="login-container">
-            <h1>Login</h1>
-            <form id="login-form">
-              <label for="username">Username</label>
+    <main>
+      <div class="login-container">
+        <h1>Login</h1>
+        <form id="login-form" novalidate>
+          <div>
+            <label for="fname">First Name</label>
+            <input
+              type="text"
+              id="fname"
+              name="fname"
+              placeholder="Enter your first name"
+              required
+            />
+            <div id="fn-error" style="color: red; display: none"></div>
+          </div>
+
+          <div>
+            <label for="lname">Last Name</label>
+            <input
+              type="text"
+              id="lname"
+              name="lname"
+              placeholder="Enter your last name"
+              required
+            />
+            <div id="ln-error" style="color: red; display: none"></div>
+          </div>
+
+          <div>
+            <label for="password">Password</label>
+            <div class="password-container">
               <input
-                type="text"
-                id="username"
-                name="username"
-                placeholder="Enter your username"
+                type="password"
+                id="password"
+                name="password"
+                placeholder="Enter your password"
                 required
               />
-
-              <label for="password">Password</label>
-              <div class="password-container">
-                <input
-                  type="password"
-                  id="password"
-                  name="password"
-                  placeholder="Enter your password"
-                  required
-                />
-                <i class="toggle-password" id="toggle-password">&#128065;</i>
-              </div>
-
-              <button type="submit" id="login-button">Login</button>
-              <p>Do not have an account? <a href="./index.html">Signup</a></p>
-            </form>
-
-            <div id="login-error" class="error-message"></div>
+              <i class="toggle-password" id="toggle-password">&#128065;</i>
+            </div>
+            <div id="pass-error" style="color: red; display: none"></div>
           </div>
-        </main>
 
-        <script src="script.js"></script>
-      </body>
-    </html>
+          <button type="submit">Login</button>
+        </form>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
   </body>
 </html>
