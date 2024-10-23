@@ -3,7 +3,6 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Open Sans", sans-serif;
-  
 }
 
 body {
@@ -13,52 +12,72 @@ body {
   padding: 2rem;
 }
 
-form{
-    max-width: 700px;
+form {
+  max-width: 700px;
 }
-
 
 h1 {
   font-size: 3rem;
   margin-bottom: 2rem;
   text-align: center;
-  
 }
 
-input{
-    display: block;
-    width: 100%;
-    height: 40px;
-    border: 1px solid grey;
-    border-radius: 8px;
-    outline: none;
-    margin-top: 1rem;
-    padding: 1rem;
-    font-size: 1rem;
-
+input {
+  display: block;
+  width: 100%;
+  height: 40px;
+  border: 1px solid grey;
+  border-radius: 8px;
+  outline: none;
+  margin-top: 1rem;
+  padding: 1rem;
+  font-size: 1rem;
 }
 
-input::placeholder{
-    font-size: 1.2rem;
+.password-container {
+  position: relative;
+  display: flex;
+  align-items: center;
 }
 
-button{
-    width: 100%;
-    height: 50px;
-    margin-top: 1rem;
-    border: none;
-    border-radius: 8px;
-    background-color: rgb(57, 57, 234);
-    color: white;
-    font-size: 1rem;
-}
-p{
-    margin-top: 1rem;
-    font-size: 1rem;
-    text-align: center;
-    a{
-        text-decoration: none;
-        font-weight: 700;
-    }
+.password-container input[type="password"],
+.password-container input[type="text"] {
+  width: 100%;
+  padding-right: 30px; /* Space for the icon */
 }
 
+i{
+  margin-top: .5rem;
+}
+
+.toggle-password {
+  position: absolute;
+  right: 10px;
+  cursor: pointer;
+  font-size: 1.2rem; /* Adjust the size as needed */
+  color: #555;
+}
+
+input::placeholder {
+  font-size: 1.2rem;
+}
+
+button {
+  width: 100%;
+  height: 50px;
+  margin-top: 1rem;
+  border: none;
+  border-radius: 8px;
+  background-color: rgb(57, 57, 234);
+  color: white;
+  font-size: 1rem;
+}
+p {
+  margin-top: 1rem;
+  font-size: 1rem;
+  text-align: center;
+  a {
+    text-decoration: none;
+    font-weight: 700;
+  }
+}
