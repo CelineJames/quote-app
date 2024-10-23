@@ -45,6 +45,15 @@ label {
   align-items: center;
 }
 
+input {
+  font-size: 1rem;
+  outline: none;
+}
+
+input:focus {
+  outline: none;
+}
+
 .password-container input[type="password"],
 .password-container input[type="text"] {
   width: 100%;
@@ -67,7 +76,6 @@ input[type="password"] {
   border: 1px solid #444;
   background-color: white;
   color: #444;
-  
 }
 
 input[type="text"]::placeholder,
